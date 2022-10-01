@@ -3,7 +3,7 @@ require('dotenv').config()
 // require express package
 
 const express =require('express')
-const workoutRoutes = require('/routes/workouts')
+const workoutRoutes = require('./routes/workouts')
 
 // express app crated
 const app = express()
