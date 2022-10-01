@@ -7,6 +7,12 @@ const express =require('express')
 // express app crated
 const app = express()
 
+//MIDDLEWARE
+app.use((req,res,next) => {
+    console.log(req.path, req.method)
+    next()
+})
+
 
 //routes
 app.get('/', (req, res) => {
